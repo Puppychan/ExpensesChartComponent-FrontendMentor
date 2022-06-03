@@ -1,0 +1,34 @@
+@use "variables.scss" as var;
+
+@mixin flex-col($gap: 0) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+@mixin flex-col-end($gap: 0) {
+    @include flex-col($gap);
+    justify-content: flex-end;
+    align-items: center;
+}
+@mixin grid-btw {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@mixin card-style($background-color, $padding-vertical: 2.5em) {
+    background-color: $background-color;
+    // padding: $padding-vertical $padding-horizontal;
+    padding: $padding-vertical 1em;
+    border-radius: 15px;
+    width: 100%;
+}
+@mixin text-style($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin small-text-style($color: var.$medium-brown) {
+    @include text-style($color, var.$step--2, 400);
+}
