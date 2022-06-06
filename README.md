@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution Url](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt/hub/expenses-chart-component-WGbPbLnJEm)
-- Live Site URL: [Live Url](https://puppychan.github.io/ExpensesChartComponent-FrontendMentor/)
+- Live Site URL: [Live Url](https://expenseschartcomponent-frontendmentor.netlify.app/)
 
 ## My process
 
@@ -66,6 +66,9 @@ Normal Grid:
   grid-area: b4;
 }
 ```
+And add package.json
+npm init -y
+npm build
 ### Continued development
 
 ## Author
